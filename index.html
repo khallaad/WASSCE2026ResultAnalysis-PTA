@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Taqwa High School — 2026 WASSCE Comprehensive Result Analysis &amp; Pass-Rate Report</title>
+<title>Taqwa High School — 2026 WASSCE Comprehensive Result &amp; Pass-Rate Report</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -173,8 +173,9 @@ p.section-sub{color:var(--ink-soft); margin:0 0 26px; max-width:70ch; font-size:
 .dept-chip.Arts{background:#f7edcf; color:var(--gold-600);}
 .candidate .meta-line{font-size:12px; color:var(--ink-soft); margin-bottom:12px; font-family:'IBM Plex Mono',monospace;}
 .grade-strip{display:flex; flex-wrap:wrap; gap:4px; margin-bottom:12px;}
-.gchip{min-width:34px; height:30px; padding:0 3px; border-radius:6px; display:flex; flex-direction:column; align-items:center; justify-content:center; font-size:8px; line-height:1.1; color:#fff; font-family:'IBM Plex Mono',monospace;}
-.gchip .g{font-weight:700; font-size:10px;}
+.gchip{min-width:46px; height:42px; padding:4px 3px; border-radius:8px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2px; font-size:9px; line-height:1; color:#fff; font-family:'IBM Plex Mono',monospace;}
+.gchip .g{font-weight:700; font-size:14px;}
+.gchip .s{font-weight:500; font-size:9px; letter-spacing:.02em; opacity:.92; text-transform:none;}
 .gA1{background:var(--grade-a);}
 .gB2,.gB3{background:var(--grade-b);}
 .gC4,.gC5,.gC6{background:var(--grade-c);}
@@ -273,7 +274,7 @@ footer .brand{color:var(--gold-300); font-family:'Playfair Display',serif; font-
 
 <header class="hero">
   <div class="eyebrow">Taqwa High School &nbsp;·&nbsp; Off Iju Road, Agege, Lagos &nbsp;·&nbsp; WASSCE For School Candidates 2026</div>
-  <h1 class="title">2026 WASSCE Comprehensive <span class="accent">Result Analysis &amp; Pass-Rate</span> Report</h1>
+  <h1 class="title">2026 WASSCE Comprehensive <span class="accent">Result &amp; Pass-Rate</span> Report</h1>
   <p class="subtitle">A complete statistical and individual breakdown of the school's 2026 WASSCE performance across the Commercial, Science and Arts departments — including subject-by-subject pass rates, an English &amp; Mathematics gatekeeper analysis, and a final performance verdict.</p>
   <div class="hero-meta">
     <div class="item"><div class="k">Candidates Sat</div><div class="v">16</div></div>
@@ -451,14 +452,14 @@ footer .brand{color:var(--gold-300); font-family:'Playfair Display',serif; font-
   <h3 class="display" style="font-size:18px;color:var(--navy-900);margin:0 0 6px;">06A &middot; Overall WASSCE Performance</h3>
   <p class="section-sub" style="margin-bottom:14px;">Ranked by average grade point across every subject sat.</p>
   <table class="list-table">
-    <thead><tr><th>Rank</th><th>Candidate</th><th>Department</th><th>Avg (/8)</th><th>Credits</th></tr></thead>
+    <thead><tr><th>Rank</th><th>Reg. No.</th><th>Department</th><th>Avg (/8)</th><th>Credits</th></tr></thead>
     <tbody id="listA"></tbody>
   </table>
 
   <h3 class="display" style="font-size:18px;color:var(--navy-900);margin:0 0 6px;">06B &middot; University-Entry Readiness</h3>
   <p class="section-sub" style="margin-bottom:14px;">Ranked first by whether a candidate holds Credit in <b>both</b> English Language and General Mathematics — the standard admission benchmark — then by average grade point.</p>
   <table class="list-table">
-    <thead><tr><th>Rank</th><th>Candidate</th><th>Department</th><th>Eng/Mth Credit</th><th>Avg (/8)</th></tr></thead>
+    <thead><tr><th>Rank</th><th>Reg. No.</th><th>Department</th><th>Eng/Mth Credit</th><th>Avg (/8)</th></tr></thead>
     <tbody id="listB"></tbody>
   </table>
 </section>
@@ -615,7 +616,7 @@ footer .brand{color:var(--gold-300); font-family:'Playfair Display',serif; font-
 <section id="plan" class="reveal">
   <span class="tag">12 &middot; School Response</span>
   <h2 class="section-title">Forward action plan for the next SS3 set</h2>
-  <p class="section-sub">Rather than revisiting this cohort's completed examination, the School is directing its response forward — putting stricter, more guarded support in place for the next SS3 set so that this diet's lessons translate directly into stronger outcomes.</p>
+  <p class="section-sub">Rather than revisiting this cohort's completed examination, The School is directing its response forward — putting stricter, more guarded support in place for the next SS3 set so that this diet's lessons translate directly into stronger outcomes.</p>
 
   <div class="plan-card">
     <span class="plan-tag">12.1 &middot; Targeted &amp; Intensified Academic Support</span>
@@ -690,6 +691,13 @@ footer .brand{color:var(--gold-300); font-family:'Playfair Display',serif; font-
 <script>
 const students = [{"examno":"4251065008","name":"Fofana Usman Aboubacar","dept":"Commercial","subjects":[["Commerce","A1"],["Accounting","A1"],["Economics","B3"],["Government","D7"],["Civic Education","A1"],["English Language","D7"],["General Mathematics","C5"],["Digital Technologies","B3"]],"deptRank":2,"deptSize":3},{"examno":"4251065006","name":"Badru Abdsamad Ayoyimika","dept":"Science","subjects":[["Civic Education","A1"],["English Language","C5"],["Further Mathematics","D7"],["General Mathematics","C6"],["Biology","B3"],["Chemistry","D7"],["Physics","D7"],["Digital Technologies","B3"]],"deptRank":4,"deptSize":10},{"examno":"4251065013","name":"Olanipekun Abdulroheem Olanrewaju","dept":"Science","subjects":[["Civic Education","A1"],["English Language","E8"],["Further Mathematics","C6"],["General Mathematics","E8"],["Biology","D7"],["Chemistry","D7"],["Physics","D7"],["Digital Technologies","C6"]],"deptRank":9,"deptSize":10},{"examno":"4251065010","name":"Moruf Adam Ayomide","dept":"Science","subjects":[["Civic Education","A1"],["English Language","E8"],["General Mathematics","D7"],["Agriculture","E8"],["Biology","C5"],["Chemistry","C6"],["Physics","D7"],["Digital Technologies","C6"]],"deptRank":7,"deptSize":10},{"examno":"4251065004","name":"Al-Amin Bashir Al-Amin","dept":"Commercial","subjects":[["Commerce","B3"],["Accounting","B3"],["Economics","F9"],["Government","F9"],["Civic Education","D7"],["English Language","E8"],["General Mathematics","F9"],["Digital Technologies","C6"]],"deptRank":3,"deptSize":3},{"examno":"4251065009","name":"Ismail-Balogun Ayshat Oluwatomi","dept":"Science","subjects":[["Economics","E8"],["Civic Education","A1"],["English Language","D7"],["General Mathematics","E8"],["Biology","B3"],["Chemistry","D7"],["Physics","D7"],["Digital Technologies","C6"]],"deptRank":8,"deptSize":10},{"examno":"4251065012","name":"Olaleye Fareedah Yewande","dept":"Science","subjects":[["Civic Education","A1"],["English Language","E8"],["Further Mathematics","C6"],["General Mathematics","C6"],["Biology","C6"],["Chemistry","D7"],["Physics","C6"],["Digital Technologies","B3"]],"deptRank":3,"deptSize":10},{"examno":"4251065011","name":"Mustapha Abdulrazaq Fatima","dept":"Science","subjects":[["Civic Education","A1"],["English Language","E8"],["Further Mathematics","C6"],["General Mathematics","D7"],["Biology","C6"],["Chemistry","D7"],["Physics","D7"],["Technical Drawing","C4"],["Digital Technologies","C5"]],"deptRank":6,"deptSize":10},{"examno":"4251065016","name":"Zubair Hamida Ayodeji","dept":"Arts","subjects":[["Economics","E8"],["Government","E8"],["Islamic Studies","C5"],["Literature in English","C5"],["Civic Education","B3"],["English Language","D7"],["Yoruba","C6"],["General Mathematics","E8"]],"deptRank":2,"deptSize":3},{"examno":"4251065005","name":"Alayo Kafilah Dolapo","dept":"Arts","subjects":[["Economics","D7"],["Government","F9"],["Islamic Studies","C4"],["Literature in English","C6"],["Civic Education","C4"],["English Language","D7"],["Yoruba","C6"],["General Mathematics","E8"]],"deptRank":3,"deptSize":3},{"examno":"4251065007","name":"Bakre Khalid Olasubomi","dept":"Commercial","subjects":[["Commerce","A1"],["Accounting","A1"],["Economics","C6"],["Government","C5"],["Civic Education","B3"],["English Language","C5"],["General Mathematics","C6"],["Digital Technologies","B3"]],"deptRank":1,"deptSize":3},{"examno":"4251065015","name":"Temim Rahmat Kehinde","dept":"Arts","subjects":[["Economics","D7"],["Government","E8"],["Islamic Studies","C4"],["Literature in English","C5"],["Civic Education","A1"],["English Language","D7"],["Yoruba","C6"],["General Mathematics","D7"]],"deptRank":1,"deptSize":3},{"examno":"4251065003","name":"Abdulkareem Sultan Omojisola","dept":"Science","subjects":[["Civic Education","A1"],["English Language","D7"],["Further Mathematics","C4"],["General Mathematics","C6"],["Biology","C5"],["Chemistry","C6"],["Physics","C6"],["Digital Technologies","C5"]],"deptRank":1,"deptSize":10},{"examno":"4251065014","name":"Temim Abdulrahman Taiwo","dept":"Science","subjects":[["Civic Education","A1"],["English Language","D7"],["Further Mathematics","C6"],["General Mathematics","D7"],["Biology","C5"],["Chemistry","D7"],["Physics","C6"],["Technical Drawing","C4"],["Digital Technologies","C4"]],"deptRank":2,"deptSize":10},{"examno":"4251065001","name":"Abdul Kareem Toyibat Ayomide","dept":"Science","subjects":[["Civic Education","B2"],["English Language","E8"],["Further Mathematics","C4"],["General Mathematics","C5"],["Biology","C5"],["Chemistry","D7"],["Physics","E8"],["Digital Technologies","B3"]],"deptRank":5,"deptSize":10},{"examno":"4251065002","name":"Abdulazeez Abdulazeez Adeshina","dept":"Science","subjects":[["Geography","C4"],["Civic Education","D7"],["English Language","D7"],["General Mathematics","D7"],["Biology","C6"],["Chemistry","D7"],["Physics","D7"],["Digital Technologies","C5"]],"deptRank":9,"deptSize":10}];
 const points = {A1:8,B2:7,B3:6,C4:5,C5:4,C6:3,D7:2,E8:1,F9:0};
+const subjAbbr = {
+  'Commerce':'Com','Accounting':'Acct','Economics':'Econ','Government':'Gov',
+  'Civic Education':'Civ','English Language':'Eng','General Mathematics':'Mth',
+  'Further Mathematics':'FMth','Digital Technologies':'DT','Biology':'Bio',
+  'Chemistry':'Chem','Physics':'Phy','Agriculture':'Agric','Technical Drawing':'TD',
+  'Geography':'Geo','Islamic Studies':'Isl','Literature in English':'Lit','Yoruba':'Yor'
+};
 const categoryOf = g => g==='A1' ? 'Distinction' : (['B2','B3','C4','C5','C6'].includes(g) ? 'Credit' : (g==='F9' ? 'Fail' : 'Pass'));
 const isCredit = g => ['A1','B2','B3','C4','C5','C6'].includes(g);
 const isDistinction = g => g==='A1';
@@ -788,7 +796,7 @@ document.getElementById('emLegend').innerHTML = emOrder.map(k=>`
 // ---- List A: Overall WASSCE performance (avg descending) ----
 const listA = [...students].sort((a,b)=> b.avg-a.avg || a.examno.localeCompare(b.examno));
 document.getElementById('listA').innerHTML = listA.map((s,i)=>`
-  <tr><td class="rk">${i+1}</td><td>${s.name}</td><td>${s.dept}</td><td class="mono">${s.avg.toFixed(2)}</td><td class="mono">${s.credits}/${s.n}</td></tr>
+  <tr><td class="rk">${i+1}</td><td class="mono">${s.examno}</td><td>${s.dept}</td><td class="mono">${s.avg.toFixed(2)}</td><td class="mono">${s.credits}/${s.n}</td></tr>
 `).join('');
 
 // ---- List B: University-entry readiness (Eng+Mth credit tier, then avg) ----
@@ -796,14 +804,14 @@ const gateTier = s => (s.engCredit && s.mthCredit) ? 2 : ((s.engCredit || s.mthC
 const listB = [...students].sort((a,b)=> gateTier(b)-gateTier(a) || b.avg-a.avg || a.examno.localeCompare(b.examno));
 const tierLabel = s => (s.engCredit && s.mthCredit) ? 'Both ✓' : (s.engCredit ? 'Eng only' : (s.mthCredit ? 'Mth only' : 'Neither'));
 document.getElementById('listB').innerHTML = listB.map((s,i)=>`
-  <tr><td class="rk">${i+1}</td><td>${s.name}</td><td>${s.dept}</td><td class="mono">${tierLabel(s)}</td><td class="mono">${s.avg.toFixed(2)}</td></tr>
+  <tr><td class="rk">${i+1}</td><td class="mono">${s.examno}</td><td>${s.dept}</td><td class="mono">${tierLabel(s)}</td><td class="mono">${s.avg.toFixed(2)}</td></tr>
 `).join('');
 
 // ---- candidate cards (anonymized — registration number only) ----
 const ranked = [...students].sort((a,b)=> b.credits-a.credits || b.avg-a.avg);
 document.getElementById('cardGrid').innerHTML = ranked.map(s=>{
   const chips = s.subjects.map(([name,g])=>`
-    <div class="gchip g${g}" title="${name}: ${categoryOf(g)}"><span class="g">${g}</span></div>
+    <div class="gchip g${g}" title="${name}: ${categoryOf(g)}"><span class="g">${g}</span><span class="s">${subjAbbr[name] || name.slice(0,4)}</span></div>
   `).join('');
   const flags = [];
   if(s.failCount===0) flags.push('<span class="flag good">No Fails</span>');
